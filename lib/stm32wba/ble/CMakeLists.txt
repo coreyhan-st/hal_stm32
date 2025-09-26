@@ -1,6 +1,9 @@
 # Copyright (c) 2025 STMicroelectronics
 #
 # SPDX-License-Identifier: Apache-2.0
+if(NOT CONFIG_NET_L2_CUSTOM_IEEE802154)
+  zephyr_include_directories(Core/Inc/ble)
+endif()
 zephyr_include_directories(Core/Inc)
 zephyr_include_directories(STM32_WPAN/Target)
 zephyr_include_directories(System/Config/Debug_GPIO)
