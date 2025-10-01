@@ -69,7 +69,9 @@ void ll_sys_ble_cntrl_init(hst_cbk hostCallback)
 void ll_sys_mac_cntrl_init(void)
 {
   ST_MAC_preInit();
+#if !defined(BLE)
   ll_sys_dependencies_init();
+#endif
 }
 #endif /* MAC */
 #endif /* CONFIG_NET_L2_CUSTOM_IEEE802154_STM32WBA */
@@ -80,7 +82,9 @@ void ll_sys_mac_cntrl_init(void)
   */
 void ll_sys_thread_init(void)
 {
+#if !defined(BLE)
   ll_sys_dependencies_init();
+#endif
 }
 
 /**
