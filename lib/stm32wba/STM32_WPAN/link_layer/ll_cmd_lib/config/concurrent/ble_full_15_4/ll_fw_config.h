@@ -185,12 +185,8 @@
 #define CHECK_ANY_MISSED_EVENT_ON_DEEP_SLEEP_EXIT   1 /* Enable\Disable calling event scheduler handler function at the end of deep sleep exit*/
 #endif /* CHECK_ANY_MISSED_EVENT_ON_DEEP_SLEEP_EXIT */
 
-#ifndef SUPPORT_AUTONOMOUS_POWER_CONTROL_REQ
-#define SUPPORT_AUTONOMOUS_POWER_CONTROL_REQ        1
-#endif /* SUPPORT_AUTONOMOUS_POWER_CONTROL_REQ */
-
 #ifndef LL_BASIC
-#define LL_BASIC  0
+#define LL_BASIC                                    0
 #endif /* LL_BASIC */
 
 /*************************** MAC Configuration *************************************/
@@ -231,6 +227,7 @@
 #ifndef SUPPORT_A_MAC
 #define SUPPORT_A_MAC                               1
 #endif /* SUPPORT_A_MAC */
+
 #ifndef SMPL_PRTCL_TEST_ENABLE
 #define SMPL_PRTCL_TEST_ENABLE                      0
 #endif /* SMPL_PRTCL_TEST_ENABLE */
